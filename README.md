@@ -1,4 +1,4 @@
-![Image](https://github.com/user-attachments/assets/0579ef0a-1f05-49aa-a105-482bef9a8c86)
+![Image](./public/assets/play.gif)
 
 # Solve 2048 by DQN
 
