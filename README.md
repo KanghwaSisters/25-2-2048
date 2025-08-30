@@ -1,19 +1,19 @@
 ![Image](./public/assets/play.gif)
 
 <p align="center">
-  <a href="2048-rl-project.vercel.app">🔗 Visualization</a>
+  <a href="https://2048-rl-project.vercel.app/">🔗 Visualization</a>
 </p>
 
 # Solve 2048 by DQN
 
 ## Archive
 
-### [PPT]()
-### [Report]()
+### [PPT](./docs/PPT_2048_DQN.pdf)
+### [Report](./docs/Report_2048_DQN.docx.pdf)
 ### [Project](https://recondite-lungfish-fd3.notion.site/1b084d3f783080978dddd658aa65fdc4?source=copy_link)
 ### [Dev Log - @Sarang Han](https://sarangswork.notion.site/2048-Agent-22d7b43d5de780beb508fb92ade9583f?source=copy_link)
 
-## 🔎 Abstract
+## Abstract
 
 본 연구는 강화학습 기반의 **심층 Q-네트워크**(Deep Q-Network, DQN)를 활용하여 2048 게임을 효과적으로 학습하는 모델을 구축한다. 기본 DQN에 Double/Dueling DQN, Prioritized Experience Replay(PER) 등의 개선 기법을 적용하고, ε-탐욕 정책과 보상 함수 설계가 학습 성능에 미치는 영향을 분석하였다.
 
@@ -23,7 +23,7 @@ This research builds an effective model for learning the 2048 game using reinfor
 
 Experimental results showed that models with improvement techniques achieved faster convergence and higher average rewards compared to basic DQN. Appropriate parameter settings and reward design incorporating merge scores and empty tile counts proved effective for stable learning. This research demonstrates the applicability of reinforcement learning techniques in puzzle games like 2048 and provides systematic validation of DQN performance improvement factors.
 
-## 📁 Structure
+## Structure
 ```
 25-2-2048/
 ├── docs/
@@ -46,7 +46,7 @@ Experimental results showed that models with improvement techniques achieved fas
 │       ├── __init__.py
 │       └── colab_training.ipynb
 ```
-## 👀 How to run
+## How to run
 
 ### 웹 애플리케이션 실행
 ```bash
@@ -62,7 +62,7 @@ npm run dev
     - 필요한 경로 설정 및 환경설정은 노트북 내 안내에 따라 진행하세요.
     - Colab에서 GPU 런타임을 사용하면 더 빠른 학습이 가능합니다.
 
-## ✔️ TODO
+## TODO
 
 - [x] 2048 환경, 환경 테스트 추가
 - [x] 간단한 DQN 알고리즘 코드, 통합 테스트 추가
@@ -73,11 +73,11 @@ npm run dev
 - [x] DQN 알고리즘 개선
 - [x] 액션 마스킹 적용
 
-## 🏆 Result 
+## Result 
 
-![Image]()
+### Training
 
-### train
+![Image](./public/assets/epi.png)
 
 ```
   episodes: 3000
@@ -85,9 +85,9 @@ npm run dev
   max_highest_tile: 1024
 ```
 
-![Image]()
+### Performance (100 Game Play)
 
-### test (100 Game Play)
+![Image](./public/assets/perform.png)
 
 ```
   Average Score: 7403.1 ± 3361.9
@@ -102,21 +102,21 @@ npm run dev
 <table>
   <tr>
     <td align="center">
-      <img src="" width="150" height="150"/><br>
+      <img src="./public/assets/sarang.jpg" width="150" height="150"/><br>
       <b>Sarang Han</b><br>
       <a href="https://github.com/Sarang-Han">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
       </a>
     </td>
     <td align="center">
-      <img src="" width="150" height="150"/><br>
+      <img src="./public/assets/yewon.jpg" width="150" height="150"/><br>
       <b>Yewon Jang</b><br>
       <a href="https://github.com/grace0039">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
       </a>
     </td>
     <td align="center">
-      <img src="" width="150" height="150"/><br>
+      <img src="./public/assets/sanga.jpg" width="150" height="150"/><br>
       <b>SangA Choi</b><br>
       <a href="https://github.com/jj8ng">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
